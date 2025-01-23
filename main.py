@@ -3,8 +3,9 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route("/")
+@app.route("/home")
 def home():
-    return "hello world"
+    return "<h1>hello world</h1>"
 
 @app.route("/about")
 def about():
